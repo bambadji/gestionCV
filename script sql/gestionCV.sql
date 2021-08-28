@@ -53,7 +53,7 @@ create table DIPLOME
    ID_NATURE            int not null,
    ID_USER              int not null,
    DATE_OBTENTION       date,
-   DESCRIPTION          varchar(255),
+   DESCRIPTION          varchar(250),
    primary key (ID_DIPLOME)
 );
 
