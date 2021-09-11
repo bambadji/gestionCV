@@ -1,4 +1,4 @@
-package com.gestions.cv.gestioncv;
+package com.gestion.cv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
