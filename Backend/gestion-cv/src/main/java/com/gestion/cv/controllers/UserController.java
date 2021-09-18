@@ -23,14 +23,7 @@ public class UserController {
 	@Autowired
 	UserRepository userRepository;
 
-	@GetMapping
-	@RequestMapping("/liste")
-	public List<User> getAllUsers() {
-
-		List<User> users = (List<User>) userRepository.findAll();
-
-		return users;
-	}
+	
 	
 	@GetMapping
 	@RequestMapping("/recherche/{id}")
@@ -40,6 +33,18 @@ public class UserController {
 		return op.get();
 	}
 	
+	// FONCTION 1
+	
+	@GetMapping
+	@RequestMapping("/liste")
+	public List<User> getAllUsers() {
+
+		List<User> users = (List<User>) userRepository.findAll();
+
+		return users;
+	}
+	
+	// FONTION 2
 	@PostMapping
 	@RequestMapping("/add")
 	public User addUser( @RequestBody User user , @RequestHeader(name = "action") String action,@RequestParam(name = "typeUser") String typeUser) {
