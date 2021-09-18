@@ -32,9 +32,7 @@ public class UserController {
 		return users;
 	}
 
-	public void test1() {
-
-	}
+	
 
 
 	@GetMapping
@@ -62,6 +60,10 @@ public class UserController {
 	}
 	
 	public void test3() {
+
+	}
+	
+	public void test1() {
 
 	}
 
