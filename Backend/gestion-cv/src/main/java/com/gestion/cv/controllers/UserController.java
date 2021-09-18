@@ -36,6 +36,7 @@ public class UserController {
 
 	}
 
+
 	@GetMapping
 	@RequestMapping("/recherche/{id}")
 	public User getUser(@PathVariable(name = "id") int userId) {
@@ -44,6 +45,8 @@ public class UserController {
 		return op.get();
 	}
 	
+	
+	// FONTION 2
 	@PostMapping
 	@RequestMapping("/add")
 	public User addUser(@RequestBody User user, @RequestHeader(name = "action") String action,
