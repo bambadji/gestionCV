@@ -31,22 +31,35 @@ public class UserController {
 
 		return users;
 	}
-	
+
+	public void test1() {
+
+	}
+
 	@GetMapping
 	@RequestMapping("/recherche/{id}")
 	public User getUser(@PathVariable(name = "id") int userId) {
-       System.out.println("Bonjour");
-		Optional<User> op= userRepository.findById(userId);
+		System.out.println("Bonjour");
+		Optional<User> op = userRepository.findById(userId);
 		return op.get();
 	}
 	
 	@PostMapping
 	@RequestMapping("/add")
-	public User addUser( @RequestBody User user , @RequestHeader(name = "action") String action,@RequestParam(name = "typeUser") String typeUser) {
+	public User addUser(@RequestBody User user, @RequestHeader(name = "action") String action,
+			@RequestParam(name = "typeUser") String typeUser) {
 		user.setPassword(action);
 		user.setPrenom(typeUser);
 		userRepository.save(user);
 		return user;
+	}
+
+	public void test2() {
+
+	}
+	
+	public void test3() {
+
 	}
 
 }
