@@ -35,7 +35,7 @@ public class UserController {
 	@GetMapping
 	@RequestMapping("/recherche/{id}")
 	public User getUser(@PathVariable(name = "id") int userId) {
-
+       System.out.println("Bonjour");
 		Optional<User> op= userRepository.findById(userId);
 		return op.get();
 	}
