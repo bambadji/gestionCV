@@ -1,4 +1,4 @@
-package com.gestion.cv.controllers;
+package sn.BMF.controllers;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gestion.cv.entites.User;
-import com.gestion.cv.repositories.UserRepository;
+import sn.BMF.entites.User;
+import sn.BMF.repositories.UserRepository;
 
 @RestController
 @RequestMapping("/api/user")

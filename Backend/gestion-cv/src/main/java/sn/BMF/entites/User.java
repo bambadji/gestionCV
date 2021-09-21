@@ -1,4 +1,4 @@
-package com.gestion.cv.entites;
+package sn.BMF.entites;
 
 import java.io.Serializable;
 import javax.persistence.*;
